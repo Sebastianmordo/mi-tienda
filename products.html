@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Mi Tienda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nuestros Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="cart.html">Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Nuestros Productos</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="imagenes/imagen-5.webp" alt="Producto 1" width="300" height="400" loading="lazy">
+                <h3>Guitarra acústica con afinador</h3>
+                <p>Precio: 400.000</p>
+                <button data-id="1" onclick="addToCart({ name: 'Guitarra acústica con afinador', price: '400.000', image: 'imagenes/imagen-5.webp' })">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/imagen 6.webp" alt="Producto 2" width="300" height="400" loading="lazy">
+                <h3>Guitarra con madera de abeto</h3>
+                <p>Precio: 700.000</p>
+                <button data-id="2" onclick="addToCart({ name: 'Guitarra con madera de abeto', price: '700.000', image: 'imagenes/imagen 6.webp' })">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/imagen 7.webp" alt="Producto 3" width="300" height="400" loading="lazy">
+                <h3>Guitarra acústica</h3>
+                <p>Precio: 500.000</p>
+                <button data-id="3" onclick="addToCart({ name: 'Guitarra acústica', price: '500.000', image: 'imagenes/imagen 7.webp' })">Agregar al carrito</button>
+            </div>
+           
+            <div class="product">
+                <img src="imagenes/imagen-8.webp" alt="Producto 4" width="300" height="400"  loading="lazy">
+                <h3>Guitarra eléctrica Fender</h3>
+                <p>Precio: 1.200.000</p>
+                <button data-id="4" onclick="addToCart({ name: 'Guitarra eléctrica Fender', price: '1.200.000', image: 'imagenes/imagen-8.webp' })">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/imagen 9.webp" alt="Producto 5" width="300" height="400" 
+                <h3>Bajo eléctrico Yamaha</h3>
+                <p>Precio: 900.000</p>
+                <button data-id="5" onclick="addToCart({ name: 'Bajo eléctrico Yamaha', price: '900.000', image: 'imagenes/imagen 9.webp' })">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/imagen 10.webp" alt="Producto 6" width="300" height="400" loading="lazy">
+                <h3>Ukelele soprano Kala</h3>
+                <p>Precio: 250.000</p>
+                <button data-id="6" onclick="addToCart({ name: 'Ukelele soprano Kala', price: '250.000', image: 'imagenes/imagen 10.webp' })">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/imagen-11.webp" alt="Producto 7" width="300" height="400" loading="lazy">
+                <h3>Amplificador Marshall 15W</h3>
+                <p>Precio: 600.000</p>
+                <button data-id="7" onclick="addToCart({ name: 'Amplificador Marshall 15W', price: '600.000', image: 'imagenes/imagen-11.webp' })">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/imagen 12.webp" alt="Producto 8"width="300" width="300" height="400" loading="lazy">
+                <h3>Pedal de efectos Boss DS-1</h3>
+                <p>Precio: 300.000</p>
+                <button data-id="8" onclick="addToCart({ name: 'Pedal de efectos Boss DS-1', price: '300.000', image: 'imagenes/imagen 12.webp' })">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Tienda</p>
+    </footer>
+</body>
+</html>
+script.min.js
